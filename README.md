@@ -1,4 +1,4 @@
 # Branch Info
-This Branch is created for improving Game Graphics and UI appearance 
+You should make changes in this branch instead of `master`
 
 
