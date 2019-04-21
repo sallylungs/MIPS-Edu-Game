@@ -32,5 +32,12 @@ class InstructionMenu extends GameScene{
         addInstruction.addLongPressEvent(AddHint);
         addInstruction.addClickEvent(AddHint);
         this.addComponent(addInstruction,-1);
+
+        // Sally Leung (lungz on slack):
+        // a bug fix -- add a button to go back, but this creates a new game... not sure how to go back to original mainscene
+        var goBack = Button.getButton('gobacktogame', 50, 60, 1, 3, 'Back');
+        goBack.addClickEvent(new NewSceneEvent(new MainScene()), new LongPressEvent());
+        this.addComponent(goBack, -1);
+
     }
 }
